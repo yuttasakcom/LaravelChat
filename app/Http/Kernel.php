@@ -42,7 +42,9 @@ class Kernel extends HttpKernel
             'bindings',
         ],
 
-        'admin' => [],
+        'admin' => [
+            'throttle:60,1',
+        ],
     ];
 
     /**

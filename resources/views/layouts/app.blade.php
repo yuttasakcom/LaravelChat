@@ -8,13 +8,22 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png')}}">
+
     <title>
         <?=$title?>
     </title>
 </head>
 
 <body>
-    @yield('content')
+    <div id="app">
+        @include('layouts.header') @yield('content')
+    </div>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>

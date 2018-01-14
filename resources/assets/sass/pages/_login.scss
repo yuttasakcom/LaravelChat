@@ -7,5 +7,137 @@
   height: 100vh;
   min-height: 100%;
   width: 100%;
-  bottom: 0;
+
+  *:focus {
+    outline: none;
+  }
+
+  .login-container {
+    color: $color-light;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
+    line-height: 1em;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1024px;
+
+    .input-container {
+      width: 400px;
+      padding: 45px;
+      float: left;
+      border-right: 1px solid $color-secondary;
+
+      h2 {
+        text-align: center;
+      }
+
+      input[type='text'],
+      input[type='email'],
+      input[type='password'] {
+        display: block;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid $color-light;
+        height: 27px;
+        line-height: 27px;
+        width: 100%;
+        color: $color-light;
+      }
+
+      & label {
+        color: $color-secondary;
+        font-size: 13px;
+        margin-top: 15px;
+        display: block;
+      }
+
+      & button {
+        background-color: transparent;
+        border: 2px solid $color-light;
+        border-radius: 250px;
+        color: $color-light;
+        display: block;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin: 20px auto;
+        height: 41px;
+        width: 100%;
+      }
+
+      .has-account-text {
+        text-align: center;
+
+        a {
+          &:link {
+            color: $color-light;
+          }
+          &:visited {
+            color: $color-light;
+          }
+          &:hover {
+            color: $color-light;
+          }
+          &:active {
+            color: $color-light;
+          }
+        }
+      }
+    }
+
+    .login-text {
+      padding: 45px;
+      display: table-cell;
+
+      h1 {
+        color: $color-success;
+        font-size: 60px;
+        font-weight: bold;
+      }
+
+      h2 {
+        margin: 35px 0;
+      }
+
+      ul {
+        padding: 0;
+
+        li {
+          font-size: 20px;
+          list-style-type: none;
+          padding: 5px 30px;
+          background: url(/img/icons/checkmark.png) no-repeat 0 0;
+        }
+      }
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: $color-light;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $color-light;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $color-light;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-light;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-light;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: $color-light;
 }

@@ -4,6 +4,8 @@ $body-bg: #f5f8fa;
 // Colors
 $color-dark: black;
 $color-light: #fff;
+$color-success: #07d159;
+$color-secondary: darken($color-light, 30%);
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);

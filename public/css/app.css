@@ -1,4 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);.login {
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.login {
   background-color: black;
   background-image: url("/img/bg.jpg");
   background-position: center;
@@ -7,7 +18,133 @@
   height: 100vh;
   min-height: 100%;
   width: 100%;
-  bottom: 0;
+}
+
+.login *:focus {
+  outline: none;
+}
+
+.login .login-container {
+  color: #fff;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: normal;
+  line-height: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1024px;
+}
+
+.login .login-container .input-container {
+  width: 400px;
+  padding: 45px;
+  float: left;
+  border-right: 1px solid #b3b2b2;
+}
+
+.login .login-container .input-container h2 {
+  text-align: center;
+}
+
+.login .login-container .input-container input[type='text'],
+.login .login-container .input-container input[type='email'],
+.login .login-container .input-container input[type='password'] {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  height: 27px;
+  line-height: 27px;
+  width: 100%;
+  color: #fff;
+}
+
+.login .login-container .input-container label {
+  color: #b3b2b2;
+  font-size: 13px;
+  margin-top: 15px;
+  display: block;
+}
+
+.login .login-container .input-container button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 250px;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 20px auto;
+  height: 41px;
+  width: 100%;
+}
+
+.login .login-container .input-container .has-account-text {
+  text-align: center;
+}
+
+.login .login-container .input-container .has-account-text a:link {
+  color: #fff;
+}
+
+.login .login-container .input-container .has-account-text a:visited {
+  color: #fff;
+}
+
+.login .login-container .input-container .has-account-text a:hover {
+  color: #fff;
+}
+
+.login .login-container .input-container .has-account-text a:active {
+  color: #fff;
+}
+
+.login .login-container .login-text {
+  padding: 45px;
+  display: table-cell;
+}
+
+.login .login-container .login-text h1 {
+  color: #07d159;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.login .login-container .login-text h2 {
+  margin: 35px 0;
+}
+
+.login .login-container .login-text ul {
+  padding: 0;
+}
+
+.login .login-container .login-text ul li {
+  font-size: 20px;
+  list-style-type: none;
+  padding: 5px 30px;
+  background: url(/img/icons/checkmark.png) no-repeat 0 0;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #fff;
 }
 
 /*!

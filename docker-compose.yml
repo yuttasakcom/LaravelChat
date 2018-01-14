@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+
+  mariadb:
+    image: mariadb:10.2.12
+    container_name: db
+    volumes:
+      - "dbdata:/var/lib/mysql"
+    env_file:
+      - ./.env
+    restart: always
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.7.7-1
+    container_name: pma
+    ports:
+      - "8088:80"
+    restart: always
+
+volumes:
+  dbdata:

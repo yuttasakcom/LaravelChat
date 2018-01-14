@@ -1057,7 +1057,7 @@ window.Pusher = __webpack_require__(37);
 
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
   broadcaster: 'pusher',
-  key: 'cf98a6a1e66534f71fca',
+  key: '5499211fa1b5296f8a42',
   cluster: 'ap1',
   encrypted: true
 });

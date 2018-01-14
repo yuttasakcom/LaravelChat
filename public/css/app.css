@@ -1,4 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);.login {
+  background-color: black;
+  background-image: url("/img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: table;
+  height: 100vh;
+  min-height: 100%;
+  width: 100%;
+  bottom: 0;
+}
+
+/*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
  * Copyright 2011-2017 Twitter, Inc.

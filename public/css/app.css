@@ -9,6 +9,10 @@ button {
   cursor: pointer;
 }
 
+.help-block {
+  color: orange;
+}
+
 .login {
   background-color: black;
   background-image: url("/img/bg.jpg");

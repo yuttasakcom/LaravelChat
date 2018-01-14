@@ -61,26 +61,31 @@
         display: block;
         font-size: 14px;
         letter-spacing: 1px;
-        margin: 20px auto;
+        margin-bottom: 20px;
         height: 41px;
         width: 100%;
       }
 
       .has-account-text {
         text-align: center;
+      }
+
+      .link-forgot-password {
+        margin-top: -10px;
+        font-size: 13px;
 
         a {
           &:link {
-            color: $color-light;
+            color: $color-secondary;
           }
           &:visited {
-            color: $color-light;
+            color: $color-secondary;
           }
           &:hover {
-            color: $color-light;
+            color: $color-secondary;
           }
           &:active {
-            color: $color-light;
+            color: $color-secondary;
           }
         }
       }
@@ -110,6 +115,21 @@
           background: url(/img/icons/checkmark.png) no-repeat 0 0;
         }
       }
+    }
+  }
+
+  a {
+    &:link {
+      color: $color-light;
+    }
+    &:visited {
+      color: $color-light;
+    }
+    &:hover {
+      color: $color-light;
+    }
+    &:active {
+      color: $color-light;
     }
   }
 }

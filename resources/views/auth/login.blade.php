@@ -9,7 +9,7 @@
                 <p>
                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                         <label for="loginUsername">Username</label>
-                        <input type="email" name="email" placeholder="e.g. example@gmail.com" required autofocus> @if ($errors->has('email'))
+                        <input type="email" name="email" placeholder="e.g. example@gmail.com"> @if ($errors->has('email'))
                         <span class="help-block">
                             <strong>{{ $errors->first('email') }}</strong>
                         </span>
@@ -20,7 +20,7 @@
                 <p>
                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                         <label for="loginPassword">Password</label>
-                        <input type="password" name="password" placeholder="Your password" required> @if ($errors->has('password'))
+                        <input type="password" name="password" placeholder="Your password"> @if ($errors->has('password'))
                         <span class="help-block">
                             <strong>{{ $errors->first('password') }}</strong>
                         </span>
@@ -28,15 +28,23 @@
                     </div>
                 </p>
 
-                <div class="form-group">
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" name="remember" {{ old( 'remember') ? 'checked' : '' }}> Remember Me
-                        </label>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="remember" {{ old( 'remember') ? 'checked' : '' }}> Remember Me
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="link-forgot-password">
+                        <a href="{{ route('password.request') }}">
+                            Forgot Your Password?
+                        </a>
                     </div>
                 </div>
 
-                <button type="submit" name="loginButton">LOG IN</button>
+                <button type="submit">LOG IN</button>
 
                 <div class="has-account-text">
                     <span id="hideLogin">Don't have an account yet?

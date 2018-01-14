@@ -80,7 +80,7 @@ button {
   display: block;
   font-size: 14px;
   letter-spacing: 1px;
-  margin: 20px auto;
+  margin-bottom: 20px;
   height: 41px;
   width: 100%;
 }
@@ -89,20 +89,25 @@ button {
   text-align: center;
 }
 
-.login .login-container .input-container .has-account-text a:link {
-  color: #fff;
+.login .login-container .input-container .link-forgot-password {
+  margin-top: -10px;
+  font-size: 13px;
 }
 
-.login .login-container .input-container .has-account-text a:visited {
-  color: #fff;
+.login .login-container .input-container .link-forgot-password a:link {
+  color: #b3b2b2;
 }
 
-.login .login-container .input-container .has-account-text a:hover {
-  color: #fff;
+.login .login-container .input-container .link-forgot-password a:visited {
+  color: #b3b2b2;
 }
 
-.login .login-container .input-container .has-account-text a:active {
-  color: #fff;
+.login .login-container .input-container .link-forgot-password a:hover {
+  color: #b3b2b2;
+}
+
+.login .login-container .input-container .link-forgot-password a:active {
+  color: #b3b2b2;
 }
 
 .login .login-container .login-text {
@@ -129,6 +134,22 @@ button {
   list-style-type: none;
   padding: 5px 30px;
   background: url(/img/icons/checkmark.png) no-repeat 0 0;
+}
+
+.login a:link {
+  color: #fff;
+}
+
+.login a:visited {
+  color: #fff;
+}
+
+.login a:hover {
+  color: #fff;
+}
+
+.login a:active {
+  color: #fff;
 }
 
 ::-webkit-input-placeholder {
